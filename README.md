@@ -1,5 +1,5 @@
 # WheelyApp
-Sample Rotating Wheel App - A iOS native dynamically rotating wheel application. The sample application screen shots can be found in the screenshots folder
+Sample Rotating Wheel App - An iOS native dynamically rotating wheel application. The sample application screen shots can be found in the screenshots folder
 
 ### Functionality
 
