@@ -18,7 +18,13 @@ class HomeViewController: UIViewController {
         optionTableView.dataSource = self
         optionTableView.delegate = self
     }
-
+    
+    @IBAction func didAddSelect(_ sender: UIButton){
+           options.append("Option \(options.count+1)")
+           defaults.set(options, forKey: Constants.wheelOptionsKey)
+           optionTableView.reloadData()
+           
+       }
     
     // MARK: - Navigation
     
@@ -58,17 +64,6 @@ extension HomeViewController : UITableViewDelegate {
             }
         }
     }
-}
-
-extension HomeViewController {
-    @IBAction func didAddSelect(_ sender: UIButton){
-        options.append("Option \(options.count+1)")
-        defaults.set(options, forKey: Constants.wheelOptionsKey)
-        optionTableView.reloadData()
-        
-    }
-    
-    
 }
 
 extension HomeViewController : OptionTableViewCellDelegate {
