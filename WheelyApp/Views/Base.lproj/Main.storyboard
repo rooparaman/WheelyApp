@@ -47,6 +47,7 @@
                                                     <subviews>
                                                         <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Type your Option" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RQB-g6-PQc">
                                                             <rect key="frame" x="33" y="11" width="320" height="34"/>
+                                                            <accessibility key="accessibilityConfiguration" identifier="optionTextField"/>
                                                             <color key="textColor" red="0.3425145745" green="0.1302860975" blue="0.0351851657" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                             <textInputTraits key="textInputTraits" autocapitalizationType="words" returnKeyType="go"/>
