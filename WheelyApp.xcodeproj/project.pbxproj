@@ -1,0 +1,645 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B7E9991E2501B20B003269B5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7E9991D2501B20B003269B5 /* AppDelegate.swift */; };
+		B7E999202501B20B003269B5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7E9991F2501B20B003269B5 /* SceneDelegate.swift */; };
+		B7E999252501B20C003269B5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7E999232501B20C003269B5 /* Main.storyboard */; };
+		B7E999272501B20D003269B5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B7E999262501B20D003269B5 /* Assets.xcassets */; };
+		B7E9992A2501B20D003269B5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7E999282501B20D003269B5 /* LaunchScreen.storyboard */; };
+		B7E999352501B20D003269B5 /* WheelyAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7E999342501B20D003269B5 /* WheelyAppTests.swift */; };
+		B7E999402501B20D003269B5 /* WheelyAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7E9993F2501B20D003269B5 /* WheelyAppUITests.swift */; };
+		B7E9994E2501B221003269B5 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7E9994D2501B221003269B5 /* HomeViewController.swift */; };
+		B7E999502501B2FC003269B5 /* OptionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7E9994F2501B2FC003269B5 /* OptionTableViewCell.swift */; };
+		B7E999542501C1B6003269B5 /* WheelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7E999532501C1B6003269B5 /* WheelViewController.swift */; };
+		B7E999562501C253003269B5 /* SpinWheelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7E999552501C253003269B5 /* SpinWheelView.swift */; };
+		B7E999582501C2D0003269B5 /* Wheel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7E999572501C2D0003269B5 /* Wheel.swift */; };
+		B7E9995A2501C30F003269B5 /* UIView+rotate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7E999592501C30F003269B5 /* UIView+rotate.swift */; };
+		B7E9995C2501E0EE003269B5 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7E9995B2501E0ED003269B5 /* Constants.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B7E999312501B20D003269B5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B7E999122501B20B003269B5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B7E999192501B20B003269B5;
+			remoteInfo = WheelyApp;
+		};
+		B7E9993C2501B20D003269B5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B7E999122501B20B003269B5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B7E999192501B20B003269B5;
+			remoteInfo = WheelyApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B7E9991A2501B20B003269B5 /* WheelyApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WheelyApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B7E9991D2501B20B003269B5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B7E9991F2501B20B003269B5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		B7E999242501B20C003269B5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B7E999262501B20D003269B5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B7E999292501B20D003269B5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B7E9992B2501B20D003269B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B7E999302501B20D003269B5 /* WheelyAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WheelyAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B7E999342501B20D003269B5 /* WheelyAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WheelyAppTests.swift; sourceTree = "<group>"; };
+		B7E999362501B20D003269B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B7E9993B2501B20D003269B5 /* WheelyAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WheelyAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B7E9993F2501B20D003269B5 /* WheelyAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WheelyAppUITests.swift; sourceTree = "<group>"; };
+		B7E999412501B20D003269B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B7E9994D2501B221003269B5 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		B7E9994F2501B2FC003269B5 /* OptionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionTableViewCell.swift; sourceTree = "<group>"; };
+		B7E999532501C1B6003269B5 /* WheelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WheelViewController.swift; sourceTree = "<group>"; };
+		B7E999552501C253003269B5 /* SpinWheelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpinWheelView.swift; sourceTree = "<group>"; };
+		B7E999572501C2D0003269B5 /* Wheel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wheel.swift; sourceTree = "<group>"; };
+		B7E999592501C30F003269B5 /* UIView+rotate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+rotate.swift"; sourceTree = "<group>"; };
+		B7E9995B2501E0ED003269B5 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B7E999172501B20B003269B5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B7E9992D2501B20D003269B5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B7E999382501B20D003269B5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B7E999112501B20B003269B5 = {
+			isa = PBXGroup;
+			children = (
+				B7E9991C2501B20B003269B5 /* WheelyApp */,
+				B7E999332501B20D003269B5 /* WheelyAppTests */,
+				B7E9993E2501B20D003269B5 /* WheelyAppUITests */,
+				B7E9991B2501B20B003269B5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B7E9991B2501B20B003269B5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B7E9991A2501B20B003269B5 /* WheelyApp.app */,
+				B7E999302501B20D003269B5 /* WheelyAppTests.xctest */,
+				B7E9993B2501B20D003269B5 /* WheelyAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B7E9991C2501B20B003269B5 /* WheelyApp */ = {
+			isa = PBXGroup;
+			children = (
+				B7E9991D2501B20B003269B5 /* AppDelegate.swift */,
+				B7E9991F2501B20B003269B5 /* SceneDelegate.swift */,
+				B7E999262501B20D003269B5 /* Assets.xcassets */,
+				B7E9992B2501B20D003269B5 /* Info.plist */,
+				B7E9995D2501EFE4003269B5 /* Views */,
+				B7E9995B2501E0ED003269B5 /* Constants.swift */,
+			);
+			path = WheelyApp;
+			sourceTree = "<group>";
+		};
+		B7E999332501B20D003269B5 /* WheelyAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				B7E999342501B20D003269B5 /* WheelyAppTests.swift */,
+				B7E999362501B20D003269B5 /* Info.plist */,
+			);
+			path = WheelyAppTests;
+			sourceTree = "<group>";
+		};
+		B7E9993E2501B20D003269B5 /* WheelyAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B7E9993F2501B20D003269B5 /* WheelyAppUITests.swift */,
+				B7E999412501B20D003269B5 /* Info.plist */,
+			);
+			path = WheelyAppUITests;
+			sourceTree = "<group>";
+		};
+		B7E9995D2501EFE4003269B5 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B7E999232501B20C003269B5 /* Main.storyboard */,
+				B7E999282501B20D003269B5 /* LaunchScreen.storyboard */,
+				B7E9995E2501EFFF003269B5 /* Extensions */,
+				B7E9995F2501F074003269B5 /* Controllers */,
+				B7E999602501F08E003269B5 /* Custom */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B7E9995E2501EFFF003269B5 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				B7E999592501C30F003269B5 /* UIView+rotate.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		B7E9995F2501F074003269B5 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				B7E9994D2501B221003269B5 /* HomeViewController.swift */,
+				B7E999532501C1B6003269B5 /* WheelViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		B7E999602501F08E003269B5 /* Custom */ = {
+			isa = PBXGroup;
+			children = (
+				B7E9994F2501B2FC003269B5 /* OptionTableViewCell.swift */,
+				B7E999552501C253003269B5 /* SpinWheelView.swift */,
+				B7E999572501C2D0003269B5 /* Wheel.swift */,
+			);
+			path = Custom;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B7E999192501B20B003269B5 /* WheelyApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B7E999442501B20D003269B5 /* Build configuration list for PBXNativeTarget "WheelyApp" */;
+			buildPhases = (
+				B7E999162501B20B003269B5 /* Sources */,
+				B7E999172501B20B003269B5 /* Frameworks */,
+				B7E999182501B20B003269B5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WheelyApp;
+			productName = WheelyApp;
+			productReference = B7E9991A2501B20B003269B5 /* WheelyApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B7E9992F2501B20D003269B5 /* WheelyAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B7E999472501B20D003269B5 /* Build configuration list for PBXNativeTarget "WheelyAppTests" */;
+			buildPhases = (
+				B7E9992C2501B20D003269B5 /* Sources */,
+				B7E9992D2501B20D003269B5 /* Frameworks */,
+				B7E9992E2501B20D003269B5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B7E999322501B20D003269B5 /* PBXTargetDependency */,
+			);
+			name = WheelyAppTests;
+			productName = WheelyAppTests;
+			productReference = B7E999302501B20D003269B5 /* WheelyAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B7E9993A2501B20D003269B5 /* WheelyAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B7E9994A2501B20D003269B5 /* Build configuration list for PBXNativeTarget "WheelyAppUITests" */;
+			buildPhases = (
+				B7E999372501B20D003269B5 /* Sources */,
+				B7E999382501B20D003269B5 /* Frameworks */,
+				B7E999392501B20D003269B5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B7E9993D2501B20D003269B5 /* PBXTargetDependency */,
+			);
+			name = WheelyAppUITests;
+			productName = WheelyAppUITests;
+			productReference = B7E9993B2501B20D003269B5 /* WheelyAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B7E999122501B20B003269B5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1160;
+				LastUpgradeCheck = 1160;
+				ORGANIZATIONNAME = rr;
+				TargetAttributes = {
+					B7E999192501B20B003269B5 = {
+						CreatedOnToolsVersion = 11.6;
+					};
+					B7E9992F2501B20D003269B5 = {
+						CreatedOnToolsVersion = 11.6;
+						TestTargetID = B7E999192501B20B003269B5;
+					};
+					B7E9993A2501B20D003269B5 = {
+						CreatedOnToolsVersion = 11.6;
+						TestTargetID = B7E999192501B20B003269B5;
+					};
+				};
+			};
+			buildConfigurationList = B7E999152501B20B003269B5 /* Build configuration list for PBXProject "WheelyApp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B7E999112501B20B003269B5;
+			productRefGroup = B7E9991B2501B20B003269B5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B7E999192501B20B003269B5 /* WheelyApp */,
+				B7E9992F2501B20D003269B5 /* WheelyAppTests */,
+				B7E9993A2501B20D003269B5 /* WheelyAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B7E999182501B20B003269B5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B7E9992A2501B20D003269B5 /* LaunchScreen.storyboard in Resources */,
+				B7E999272501B20D003269B5 /* Assets.xcassets in Resources */,
+				B7E999252501B20C003269B5 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B7E9992E2501B20D003269B5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B7E999392501B20D003269B5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B7E999162501B20B003269B5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B7E999562501C253003269B5 /* SpinWheelView.swift in Sources */,
+				B7E9991E2501B20B003269B5 /* AppDelegate.swift in Sources */,
+				B7E9995A2501C30F003269B5 /* UIView+rotate.swift in Sources */,
+				B7E999582501C2D0003269B5 /* Wheel.swift in Sources */,
+				B7E9995C2501E0EE003269B5 /* Constants.swift in Sources */,
+				B7E999542501C1B6003269B5 /* WheelViewController.swift in Sources */,
+				B7E999202501B20B003269B5 /* SceneDelegate.swift in Sources */,
+				B7E999502501B2FC003269B5 /* OptionTableViewCell.swift in Sources */,
+				B7E9994E2501B221003269B5 /* HomeViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B7E9992C2501B20D003269B5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B7E999352501B20D003269B5 /* WheelyAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B7E999372501B20D003269B5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B7E999402501B20D003269B5 /* WheelyAppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B7E999322501B20D003269B5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B7E999192501B20B003269B5 /* WheelyApp */;
+			targetProxy = B7E999312501B20D003269B5 /* PBXContainerItemProxy */;
+		};
+		B7E9993D2501B20D003269B5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B7E999192501B20B003269B5 /* WheelyApp */;
+			targetProxy = B7E9993C2501B20D003269B5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B7E999232501B20C003269B5 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B7E999242501B20C003269B5 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B7E999282501B20D003269B5 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B7E999292501B20D003269B5 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B7E999422501B20D003269B5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B7E999432501B20D003269B5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B7E999452501B20D003269B5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = WheelyApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.rr.WheelyApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B7E999462501B20D003269B5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = WheelyApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.rr.WheelyApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		B7E999482501B20D003269B5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = WheelyAppTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.rr.WheelyAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WheelyApp.app/WheelyApp";
+			};
+			name = Debug;
+		};
+		B7E999492501B20D003269B5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = WheelyAppTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.rr.WheelyAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WheelyApp.app/WheelyApp";
+			};
+			name = Release;
+		};
+		B7E9994B2501B20D003269B5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = WheelyAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.rr.WheelyAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = WheelyApp;
+			};
+			name = Debug;
+		};
+		B7E9994C2501B20D003269B5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = WheelyAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.rr.WheelyAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = WheelyApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B7E999152501B20B003269B5 /* Build configuration list for PBXProject "WheelyApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B7E999422501B20D003269B5 /* Debug */,
+				B7E999432501B20D003269B5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B7E999442501B20D003269B5 /* Build configuration list for PBXNativeTarget "WheelyApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B7E999452501B20D003269B5 /* Debug */,
+				B7E999462501B20D003269B5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B7E999472501B20D003269B5 /* Build configuration list for PBXNativeTarget "WheelyAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B7E999482501B20D003269B5 /* Debug */,
+				B7E999492501B20D003269B5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B7E9994A2501B20D003269B5 /* Build configuration list for PBXNativeTarget "WheelyAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B7E9994B2501B20D003269B5 /* Debug */,
+				B7E9994C2501B20D003269B5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B7E999122501B20B003269B5 /* Project object */;
+}
